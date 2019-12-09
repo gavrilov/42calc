@@ -1,4 +1,4 @@
-<!-- Pour copier ce site, il suffit de télécharger l'index.html et le infos.json -->
+<!-- To copy this site, just download the index.html and infos.json -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,24 +9,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>42 Level Calculator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Coucou, c'est mprevot !</h1>
+      <h1>Hello!</h1>
       <hr>
-      <p>À priori si tu valides le projet</p>
+      <p>At first, if you validate the project</p>
       <select id="projects" class="form-control form-control-lg">
       </select>
       <hr>
-      <p>Et que ton niveau c'est</p>
+      <p>And your current level is</p>
       <input id="lvl" type="number" class="form-control form-control-lg" value="7.42" step="0.01">
       <hr>
-      <p>Et que ta note c'est</p>
+      <p>And XP of your project is</p>
       <input id="notation" type="number" class="form-control form-control-lg" value="100">
       <hr>
-      <p>Tu devrais avoir environ le lvl <span id="newlvl"></span>.</p>
-      <p>Pour te donner une idée, je dois me tromper d'environ <span id="percent"></span> %.</p>
+      <p>You should get about lvl <span id="newlvl"></span>.</p>
+      <p>To give you an idea, an error in the calculations is about <span id="percent"></span> %.</p>
     </div>
 
     <!-- Optional JavaScript -->
@@ -62,7 +62,7 @@
       });
       datas = data['coefs'];
       compute();
-      
+
     })});
     $("input").keyup(compute);
     $("input").change(compute);
